@@ -2,9 +2,15 @@ import ImageIncome from "../../assets/income.svg";
 import ImageOutcome from "../../assets/outcome.svg";
 import ImageTotal from "../../assets/total.svg";
 
+import { useTransactions } from "../../hooks/Transactions";
+
 import { Container } from "./styles";
 
 function Summary() {
+  const transactions = useTransactions();
+
+  console.log(transactions);
+
   return (
     <Container>
       <div>
