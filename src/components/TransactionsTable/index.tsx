@@ -3,7 +3,7 @@ import { useTransactions } from "../../hooks/Transactions";
 import { Container } from "./styles";
 
 function TransactionsTable() {
-  const transactions = useTransactions();
+  const { transactions } = useTransactions();
 
   return (
     <Container>
